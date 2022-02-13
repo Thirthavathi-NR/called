@@ -1,0 +1,13 @@
+name: simple workflow
+on:
+ workflow_call:
+jobs:
+    siple-job-1:
+       runs-on: ubuntu-latest
+       steps:
+           - name: step-1
+             run: |
+                echo $hotname
+                echo uID
+             
+      
