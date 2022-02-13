@@ -1,8 +1,9 @@
 name: car_workflow
-on : [push]
+on :
+  workflow_call:
 jobs:
   upload1:
-    nme: uploading office files to server
+    name: uploading office files to server
     runs-on: ubuntu-latest
     steps:
       - shell: bash
